@@ -7,11 +7,15 @@ npm i -g polymer-cli
 
 ### Iniciando el proyecto
 npm init -y
+
 npm i lit-element
+
 npm install lit-element-router --save
 
 crear carpeta src y dentro las demas sub carpetas
+
 crear index.html en la raiz
+
 crear src/index.js o app.js que son los que van a contener todos los archivos
 
 #### Componente base
