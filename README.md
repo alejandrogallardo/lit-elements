@@ -39,7 +39,8 @@ customElements.define('footer-element', Footer)
 #### Para correr el servidor
 polymer serve
 
-Para que pueda funcionar correctamente en todos los navegadores es necesario instalar los polyfills
+**Para que pueda funcionar correctamente en todos los navegadores es necesario instalar los polyfills**
+
 npm install @webcomponents/webcomponentsjs
 
 Esta parte va en el index.html
