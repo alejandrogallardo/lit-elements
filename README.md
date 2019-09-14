@@ -10,62 +10,33 @@ npm init -y
 npm i lit-element
 npm install lit-element-router --save
 
-crear carpeta src
+crear carpeta src y dentro las demas sub carpetas
 crear index.html en la raiz
-crear src/index.js
+crear src/index.js o app.js que son los que van a contener todos los archivos
 
-
-
-
+#### Componente base
 ```
 import { LitElement, html } from 'lit-element'
 
 export class Footer extends LitElement {
 
-    static get properties(){
-        return {
-            titulo: { type: String },
-            ans: { type: Number }
-        }
-    }
-
     render(){
         return html `
         <style>
-        .copy {
-            background: linear-gradient(to right, rgba(197,77,170,1) 0%, rgba(27,113,214,1) 100%);
-            font-size: 15px;
-            text-align: center;
-            color: #C9BADD;
-            
-        }
-        
-        .copy p {
-            padding: 30px 0;
-            margin: 0;
-        }
-
+        h1 {
+            color: peru;
+           } 
         </style>
 
-        <section class="copy">
-            <div class="overlay">
-                <div class="wrapper">
-                    <p>Copyright © ${this.ans} ${this.titulo}</p>
-                </div>
-            </div>
-        </section>
+        <h1>Hola Mundo</h1>
         `
     }
-    constructor(){
-        super();
-        this.ans = new Date().getFullYear();
-    }
+    
 }
 customElements.define('footer-element', Footer)
 ```
 
-
-
+#### Para correr el servidor
 polymer serve
 
 Para que pueda funcionar correctamente en todos los navegadores es necesario instalar los polyfills
