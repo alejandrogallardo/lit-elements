@@ -17,7 +17,7 @@ crear src/index.js
 
 
 
-``
+```
 import { LitElement, html } from 'lit-element'
 
 export class Footer extends LitElement {
@@ -62,7 +62,7 @@ export class Footer extends LitElement {
     }
 }
 customElements.define('footer-element', Footer)
-``
+```
 
 
 
